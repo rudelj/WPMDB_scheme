@@ -5,44 +5,44 @@
     "DOMAINS": [
       {
         "id": "work_items",
-        "label": "Normes & Spécifications (Work Items)",
+        "label": "Standards & Specifications (Work Items)",
         "short": "WKI",
         "color": "#2563eb"
       },
       {
         "id": "schedules",
-        "label": "Jalons & Procédures (Schedules)",
+        "label": "Milestones & Schedules",
         "short": "SCH",
         "color": "#059669"
       },
       {
         "id": "mandates_legislation",
-        "label": "Mandats CE & Réglementation",
+        "label": "EC Mandates & Legislation",
         "short": "REG",
         "color": "#d97706"
       },
       {
         "id": "publication_transposition",
-        "label": "Catalogue & Transposition (NSO)",
+        "label": "Catalogue & NSO Transposition",
         "short": "CAT",
         "color": "#7c3aed"
       },
       {
         "id": "stf_projects",
-        "label": "Équipes Spéciales d'Experts (STF)",
+        "label": "Special Task Forces (STF)",
         "short": "STF",
         "color": "#0891b2"
       },
       {
         "id": "referentials",
-        "label": "Référentiels & Nomenclatures",
+        "label": "Reference Data & Taxonomies",
         "short": "REF",
         "color": "#4b5563",
         "neutral": true
       },
       {
         "id": "audit_history",
-        "label": "Historique & Traçabilité",
+        "label": "Audit Logs & History",
         "short": "LOG",
         "color": "#64748b",
         "neutral": true
@@ -54,7 +54,7 @@
         "label": "A_LOG",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: A_LOG",
+        "desc": "Historical archive and audit log: A_LOG",
         "columns": [
           {
             "name": "START_TIME_STAMP",
@@ -88,7 +88,7 @@
         "label": "ACTION_DURATION",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: ACTION_DURATION",
+        "desc": "Reference lookup table: ACTION_DURATION",
         "columns": [
           {
             "name": "ACTION_TYPE",
@@ -112,7 +112,7 @@
         "label": "ACTION_FORBIDDEN_DATES",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: ACTION_FORBIDDEN_DATES",
+        "desc": "Reference lookup table: ACTION_FORBIDDEN_DATES",
         "columns": [
           {
             "name": "ID",
@@ -139,7 +139,7 @@
         "label": "ACTION_MEMBER_HISTORY",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: ACTION_MEMBER_HISTORY",
+        "desc": "Historical archive and audit log: ACTION_MEMBER_HISTORY",
         "columns": [
           {
             "name": "ACTION_TYPE",
@@ -181,7 +181,7 @@
         "label": "APP_ALLOCATION",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: APP_ALLOCATION",
+        "desc": "Reference taxonomy: APP_ALLOCATION",
         "columns": [
           {
             "name": "ID",
@@ -213,7 +213,7 @@
         "label": "APP_COLOR",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: APP_COLOR",
+        "desc": "Reference taxonomy: APP_COLOR",
         "columns": [
           {
             "name": "ID",
@@ -248,7 +248,7 @@
         "label": "APPLICATION",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: APPLICATION",
+        "desc": "Reference taxonomy: APPLICATION",
         "columns": [
           {
             "name": "ID",
@@ -280,7 +280,7 @@
         "label": "APPLICATION_FAMILY",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: APPLICATION_FAMILY",
+        "desc": "Reference taxonomy: APPLICATION_FAMILY",
         "columns": [
           {
             "name": "ID",
@@ -313,7 +313,7 @@
         "label": "APPLICATION_FAMILY_APPLICATION",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: APPLICATION_FAMILY_APPLICATION",
+        "desc": "Reference taxonomy: APPLICATION_FAMILY_APPLICATION",
         "columns": [
           {
             "name": "ID",
@@ -337,7 +337,7 @@
         "label": "ARTICLE",
         "domain": "publication_transposition",
         "role": "tx",
-        "desc": "Articles et chapitres normatifs publiés",
+        "desc": "Published normative articles and clauses",
         "columns": [
           {
             "name": "ART_TYPE",
@@ -513,7 +513,7 @@
         "label": "CATALOG_INDEX",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: CATALOG_INDEX",
+        "desc": "Historical archive and audit log: CATALOG_INDEX",
         "columns": [
           {
             "name": "WKI_ID",
@@ -532,7 +532,7 @@
         "label": "Catalog_Main",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: Catalog_Main",
+        "desc": "Historical archive and audit log: Catalog_Main",
         "columns": [
           {
             "name": "WKI_ID",
@@ -866,7 +866,7 @@
         "label": "catalog_main_history",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: catalog_main_history",
+        "desc": "Historical archive and audit log: catalog_main_history",
         "columns": [
           {
             "name": "WKI_ID",
@@ -1165,7 +1165,7 @@
         "label": "Catalog_Pub_Lock_Table",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: Catalog_Pub_Lock_Table",
+        "desc": "Historical archive and audit log: Catalog_Pub_Lock_Table",
         "columns": [
           {
             "name": "UserName",
@@ -1183,7 +1183,7 @@
         "label": "Catalog_TITLE",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: Catalog_TITLE",
+        "desc": "Historical archive and audit log: Catalog_TITLE",
         "columns": [
           {
             "name": "WKI_ID",
@@ -1227,7 +1227,7 @@
         "label": "CDRom",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: CDRom",
+        "desc": "Reference lookup table: CDRom",
         "columns": [
           {
             "name": "WKI_ID",
@@ -1461,7 +1461,7 @@
         "label": "CDRom_Freeze",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: CDRom_Freeze",
+        "desc": "Reference lookup table: CDRom_Freeze",
         "columns": [
           {
             "name": "CD_Number",
@@ -1484,7 +1484,7 @@
         "label": "dtproperties",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: dtproperties",
+        "desc": "Reference lookup table: dtproperties",
         "columns": [
           {
             "name": "id",
@@ -1527,7 +1527,7 @@
         "label": "Histo_catalog_main",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: Histo_catalog_main",
+        "desc": "Historical archive and audit log: Histo_catalog_main",
         "columns": [
           {
             "name": "WKI_ID",
@@ -1871,7 +1871,7 @@
         "label": "histo_catalog_main_history",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: histo_catalog_main_history",
+        "desc": "Historical archive and audit log: histo_catalog_main_history",
         "columns": [
           {
             "name": "WKI_ID",
@@ -2183,7 +2183,7 @@
         "label": "Histo_catalog_title",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: Histo_catalog_title",
+        "desc": "Historical archive and audit log: Histo_catalog_title",
         "columns": [
           {
             "name": "WKI_ID",
@@ -2242,7 +2242,7 @@
         "label": "OTHER_STANDARD",
         "domain": "work_items",
         "role": "child",
-        "desc": "Détail du Work Item: OTHER_STANDARD",
+        "desc": "Work item metadata: OTHER_STANDARD",
         "columns": [
           {
             "name": "STD_ID",
@@ -2297,7 +2297,7 @@
         "label": "PORTAL_Temp",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: PORTAL_Temp",
+        "desc": "Reference lookup table: PORTAL_Temp",
         "columns": [
           {
             "name": "Num",
@@ -2320,7 +2320,7 @@
         "label": "PORTAL_Temp2",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: PORTAL_Temp2",
+        "desc": "Reference lookup table: PORTAL_Temp2",
         "columns": [
           {
             "name": "Table_Id",
@@ -2338,7 +2338,7 @@
         "label": "PROJECT_REMARK",
         "domain": "referentials",
         "role": "child",
-        "desc": "Table de référence WPMDB: PROJECT_REMARK",
+        "desc": "Reference lookup table: PROJECT_REMARK",
         "columns": [
           {
             "name": "PROJECT_ID",
@@ -2387,7 +2387,7 @@
         "label": "PROTOTYPE",
         "domain": "schedules",
         "role": "child",
-        "desc": "Gabarits d'échéancier par catégorie de norme",
+        "desc": "Standard milestone prototype templates by deliverable type",
         "columns": [
           {
             "name": "PROC_ID",
@@ -2470,7 +2470,7 @@
         "label": "PUBLICATIONS_CATALOG",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: PUBLICATIONS_CATALOG",
+        "desc": "Historical archive and audit log: PUBLICATIONS_CATALOG",
         "columns": [
           {
             "name": "cART_CODE",
@@ -2574,7 +2574,7 @@
         "label": "RDB_ARTICLE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: RDB_ARTICLE",
+        "desc": "Reference lookup table: RDB_ARTICLE",
         "columns": [
           {
             "name": "ART_TYPE",
@@ -2753,7 +2753,7 @@
         "label": "SCHEDULE",
         "domain": "schedules",
         "role": "hub",
-        "desc": "Échéancier complet des jalons de production des normes (> 520 000 jalons)",
+        "desc": "Complete milestone timeline tracking standardisation lifecycle (> 520,000 milestones)",
         "columns": [
           {
             "name": "WKI_ID",
@@ -2895,7 +2895,7 @@
         "label": "SCHEDULE_TMP",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: SCHEDULE_TMP",
+        "desc": "Historical archive and audit log: SCHEDULE_TMP",
         "columns": [
           {
             "name": "WKI_ID",
@@ -3032,7 +3032,7 @@
         "label": "STAGE_CODES",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: STAGE_CODES",
+        "desc": "Reference lookup table: STAGE_CODES",
         "columns": [
           {
             "name": "ETSI_CODE",
@@ -3095,7 +3095,7 @@
         "label": "STF_CONTRACTUAL_MILESTONE",
         "domain": "stf_projects",
         "role": "child",
-        "desc": "Détail de gestion STF: STF_CONTRACTUAL_MILESTONE",
+        "desc": "STF management metadata: STF_CONTRACTUAL_MILESTONE",
         "columns": [
           {
             "name": "MLST_CODE",
@@ -3146,7 +3146,7 @@
         "label": "STF_REFERENCE",
         "domain": "stf_projects",
         "role": "child",
-        "desc": "Détail de gestion STF: STF_REFERENCE",
+        "desc": "STF management metadata: STF_REFERENCE",
         "columns": [
           {
             "name": "STF_CODE",
@@ -3210,7 +3210,7 @@
         "label": "STF_REFERENCE_MILESTONE",
         "domain": "stf_projects",
         "role": "child",
-        "desc": "Détail de gestion STF: STF_REFERENCE_MILESTONE",
+        "desc": "STF management metadata: STF_REFERENCE_MILESTONE",
         "columns": [
           {
             "name": "STF_CODE",
@@ -3274,7 +3274,7 @@
         "label": "STF_REFERENCE_SCHEDULE",
         "domain": "stf_projects",
         "role": "child",
-        "desc": "Détail de gestion STF: STF_REFERENCE_SCHEDULE",
+        "desc": "STF management metadata: STF_REFERENCE_SCHEDULE",
         "columns": [
           {
             "name": "STF_CODE",
@@ -3338,7 +3338,7 @@
         "label": "STF_REFERENCE_TRAVEL",
         "domain": "stf_projects",
         "role": "master",
-        "desc": "Barème et nomenclature STF: STF_REFERENCE_TRAVEL",
+        "desc": "STF travel rates and schedule taxonomy: STF_REFERENCE_TRAVEL",
         "columns": [
           {
             "name": "STF_CODE",
@@ -3402,7 +3402,7 @@
         "label": "STF_SCHEDULE",
         "domain": "stf_projects",
         "role": "tx",
-        "desc": "Gestion opérationnelle des missions et plannings STF: STF_SCHEDULE",
+        "desc": "Operational management of STF missions and schedules: STF_SCHEDULE",
         "columns": [
           {
             "name": "STF_SCHED_ID",
@@ -3463,7 +3463,7 @@
         "label": "STF_SCHEDULE_TYPE",
         "domain": "stf_projects",
         "role": "master",
-        "desc": "Barème et nomenclature STF: STF_SCHEDULE_TYPE",
+        "desc": "STF travel rates and schedule taxonomy: STF_SCHEDULE_TYPE",
         "columns": [
           {
             "name": "SCHEDTYPE_ID",
@@ -3507,7 +3507,7 @@
         "label": "STF_TRAVEL",
         "domain": "stf_projects",
         "role": "tx",
-        "desc": "Gestion opérationnelle des missions et plannings STF: STF_TRAVEL",
+        "desc": "Operational management of STF missions and schedules: STF_TRAVEL",
         "columns": [
           {
             "name": "TRAVEL_ID",
@@ -3603,7 +3603,7 @@
         "label": "STF_WORK_ITEM",
         "domain": "stf_projects",
         "role": "hub",
-        "desc": "Affectation et gouvernance des équipes spéciales d'experts (STF)",
+        "desc": "Resource allocation and governance for Special Task Forces (STF)",
         "columns": [
           {
             "name": "STF_WKI_ID",
@@ -3676,7 +3676,7 @@
         "label": "STF_WORK_ITEM_history",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: STF_WORK_ITEM_history",
+        "desc": "Historical archive and audit log: STF_WORK_ITEM_history",
         "columns": [
           {
             "name": "STF_WKI_ID",
@@ -3746,7 +3746,7 @@
         "label": "Supersede",
         "domain": "work_items",
         "role": "join",
-        "desc": "Remplacement, révision et succession des normes",
+        "desc": "Standard superseding, revision chain and version succession",
         "columns": [
           {
             "name": "SupersederWorkItemId",
@@ -3767,7 +3767,7 @@
         "label": "SUPPORTING_MEMBERS",
         "domain": "work_items",
         "role": "child",
-        "desc": "Membres ETSI soutenant officiellement la création du Work Item",
+        "desc": "ETSI member companies officially supporting Work Item creation",
         "columns": [
           {
             "name": "WKI_ID",
@@ -3796,7 +3796,7 @@
         "label": "sysdiagrams",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: sysdiagrams",
+        "desc": "Reference lookup table: sysdiagrams",
         "columns": [
           {
             "name": "name",
@@ -3828,7 +3828,7 @@
         "label": "TAB_ACTION_TYPE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Types d'actions de normalisation",
+        "desc": "Standardisation action types",
         "columns": [
           {
             "name": "ACTION_TYPE",
@@ -3976,7 +3976,7 @@
         "label": "TAB_CLUSTER",
         "domain": "referentials",
         "role": "master",
-        "desc": "Thématiques et clusters technologiques",
+        "desc": "Technology clusters and thematic domains",
         "columns": [
           {
             "name": "CLUSTER_ID",
@@ -4004,7 +4004,7 @@
         "label": "TAB_CLUSTER_TB",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_CLUSTER_TB",
+        "desc": "Reference taxonomy: TAB_CLUSTER_TB",
         "columns": [
           {
             "name": "TB_ID",
@@ -4033,7 +4033,7 @@
         "label": "TAB_CTY_AUTOMATIC_TRANSPOSITION",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_CTY_AUTOMATIC_TRANSPOSITION",
+        "desc": "Reference taxonomy: TAB_CTY_AUTOMATIC_TRANSPOSITION",
         "columns": [
           {
             "name": "TB_ID",
@@ -4057,7 +4057,7 @@
         "label": "TAB_FREQUENCY_APP",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_FREQUENCY_APP",
+        "desc": "Reference taxonomy: TAB_FREQUENCY_APP",
         "columns": [
           {
             "name": "FREQUENCY_APP_ID",
@@ -4091,7 +4091,7 @@
         "label": "TAB_FREQUENCY_UNITS",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_FREQUENCY_UNITS",
+        "desc": "Reference taxonomy: TAB_FREQUENCY_UNITS",
         "columns": [
           {
             "name": "FREQUENCY_UNIT_ID",
@@ -4124,7 +4124,7 @@
         "label": "Tab_Language",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: Tab_Language",
+        "desc": "Reference taxonomy: Tab_Language",
         "columns": [
           {
             "name": "Lang_Code",
@@ -4150,7 +4150,7 @@
         "label": "TAB_LEAD_BODY",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_LEAD_BODY",
+        "desc": "Reference taxonomy: TAB_LEAD_BODY",
         "columns": [
           {
             "name": "LEAD_BODY",
@@ -4183,7 +4183,7 @@
         "label": "TAB_MILESTONE_CODE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Codes des jalons procéduraux (TB Approval, Vote, Publication)",
+        "desc": "Procedural milestone codes (TB Approval, Membership Vote, Publication)",
         "columns": [
           {
             "name": "MLS_CODE",
@@ -4220,7 +4220,7 @@
         "label": "tab_milestone_code_QA",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: tab_milestone_code_QA",
+        "desc": "Reference taxonomy: tab_milestone_code_QA",
         "columns": [
           {
             "name": "MLS_CODE",
@@ -4256,7 +4256,7 @@
         "label": "TAB_PRICE_CODE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_PRICE_CODE",
+        "desc": "Reference taxonomy: TAB_PRICE_CODE",
         "columns": [
           {
             "name": "PRICE_CODE",
@@ -4285,7 +4285,7 @@
         "label": "TAB_PROJECT_REMARK_TYPE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_PROJECT_REMARK_TYPE",
+        "desc": "Reference taxonomy: TAB_PROJECT_REMARK_TYPE",
         "columns": [
           {
             "name": "REMARK_TYPE",
@@ -4318,7 +4318,7 @@
         "label": "TAB_PUBLICATION_STATUS",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_PUBLICATION_STATUS",
+        "desc": "Reference taxonomy: TAB_PUBLICATION_STATUS",
         "columns": [
           {
             "name": "PUBLICATION_STATUS",
@@ -4361,7 +4361,7 @@
         "label": "TAB_STANDARD_TYPE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_STANDARD_TYPE",
+        "desc": "Reference taxonomy: TAB_STANDARD_TYPE",
         "columns": [
           {
             "name": "ETSI_STANDARD_TYPE",
@@ -4517,7 +4517,7 @@
         "label": "tab_standard_type_20030120",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: tab_standard_type_20030120",
+        "desc": "Reference taxonomy: tab_standard_type_20030120",
         "columns": [
           {
             "name": "ETSI_STANDARD_TYPE",
@@ -4672,7 +4672,7 @@
         "label": "TAB_STANDSTILL_STATUS",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_STANDSTILL_STATUS",
+        "desc": "Reference taxonomy: TAB_STANDSTILL_STATUS",
         "columns": [
           {
             "name": "STANDSTILL_STATUS",
@@ -4705,7 +4705,7 @@
         "label": "TAB_STATUS_RANGE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_STATUS_RANGE",
+        "desc": "Reference taxonomy: TAB_STATUS_RANGE",
         "columns": [
           {
             "name": "STATUS_RANGE_ID",
@@ -4747,7 +4747,7 @@
         "label": "TAB_STD_LINK_STATUS",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_STD_LINK_STATUS",
+        "desc": "Reference taxonomy: TAB_STD_LINK_STATUS",
         "columns": [
           {
             "name": "STD_LINK_STATUS",
@@ -4780,7 +4780,7 @@
         "label": "TAB_STD_STATUS",
         "domain": "referentials",
         "role": "master",
-        "desc": "Statuts du cycle de vie des normes",
+        "desc": "Lifecycle status codes for standards",
         "columns": [
           {
             "name": "STD_STATUS",
@@ -4813,7 +4813,7 @@
         "label": "TAB_STD_TYPE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Types de normes (TS, TR, EN, ES, EG, GS)",
+        "desc": "Standard types (TS, TR, EN, ES, EG, GS)",
         "columns": [
           {
             "name": "STD_TYPE",
@@ -4846,7 +4846,7 @@
         "label": "TAB_TRAVEL_STATUS",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_TRAVEL_STATUS",
+        "desc": "Reference taxonomy: TAB_TRAVEL_STATUS",
         "columns": [
           {
             "name": "TRAVEL_STATUS",
@@ -4870,7 +4870,7 @@
         "label": "TAB_WKI_REMARK_TYPE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_WKI_REMARK_TYPE",
+        "desc": "Reference taxonomy: TAB_WKI_REMARK_TYPE",
         "columns": [
           {
             "name": "REMARK_TYPE",
@@ -4902,7 +4902,7 @@
         "label": "TAB_WKI_STATE_CODE",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: TAB_WKI_STATE_CODE",
+        "desc": "Reference taxonomy: TAB_WKI_STATE_CODE",
         "columns": [
           {
             "name": "STATE_CODE",
@@ -4943,7 +4943,7 @@
         "label": "tab_wki_state_code_transition",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: tab_wki_state_code_transition",
+        "desc": "Reference taxonomy: tab_wki_state_code_transition",
         "columns": [
           {
             "name": "FROM_STATE_CODE",
@@ -4968,7 +4968,7 @@
         "label": "TempResults",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: TempResults",
+        "desc": "Reference lookup table: TempResults",
         "columns": [
           {
             "name": "ColumnName",
@@ -4987,7 +4987,7 @@
         "label": "TRANSPOSITION",
         "domain": "publication_transposition",
         "role": "tx",
-        "desc": "Transposition des normes européennes (EN) par les organismes nationaux (NSOs)",
+        "desc": "National transposition of European Standards (EN) by National Standards Bodies (NSOs)",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5041,7 +5041,7 @@
         "label": "transposition_20180629",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: transposition_20180629",
+        "desc": "Reference lookup table: transposition_20180629",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5093,7 +5093,7 @@
         "label": "TRANSPOSITION_TARGET",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: TRANSPOSITION_TARGET",
+        "desc": "Reference lookup table: TRANSPOSITION_TARGET",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5146,7 +5146,7 @@
         "label": "WI_CRIT",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: WI_CRIT",
+        "desc": "Reference lookup table: WI_CRIT",
         "columns": [
           {
             "name": "CRIT_ID",
@@ -5200,7 +5200,7 @@
         "label": "WKI_ASPECTS",
         "domain": "work_items",
         "role": "child",
-        "desc": "Observations et contenu technique: WKI_ASPECTS",
+        "desc": "Technical notes and remarks: WKI_ASPECTS",
         "columns": [
           {
             "name": "WKI_ASPECTS_ID",
@@ -5294,7 +5294,7 @@
         "label": "WKI_CLUSTER",
         "domain": "work_items",
         "role": "join",
-        "desc": "Indexation et catégorisation thématique: WKI_CLUSTER",
+        "desc": "Thematic indexing and technology categorization: WKI_CLUSTER",
         "columns": [
           {
             "name": "CLUSTER_ID",
@@ -5325,7 +5325,7 @@
         "label": "WKI_CROSS_REF",
         "domain": "work_items",
         "role": "join",
-        "desc": "Références croisées et dépendances entre normes",
+        "desc": "Cross-references and technical dependencies between standards",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5359,7 +5359,7 @@
         "label": "WKI_DIRECTIVE",
         "domain": "mandates_legislation",
         "role": "join",
-        "desc": "Liaison juridique et mandat: WKI_DIRECTIVE",
+        "desc": "Legal mandate mapping: WKI_DIRECTIVE",
         "columns": [
           {
             "name": "DIRECTIVE",
@@ -5388,7 +5388,7 @@
         "label": "WKI_DOC",
         "domain": "work_items",
         "role": "child",
-        "desc": "Détail du Work Item: WKI_DOC",
+        "desc": "Work item metadata: WKI_DOC",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5429,7 +5429,7 @@
         "label": "WKI_FREQUENCY",
         "domain": "work_items",
         "role": "join",
-        "desc": "Indexation et catégorisation thématique: WKI_FREQUENCY",
+        "desc": "Thematic indexing and technology categorization: WKI_FREQUENCY",
         "columns": [
           {
             "name": "FREQUENCY_APP_ID",
@@ -5481,7 +5481,7 @@
         "label": "WKI_IMPORT",
         "domain": "work_items",
         "role": "child",
-        "desc": "Détail du Work Item: WKI_IMPORT",
+        "desc": "Work item metadata: WKI_IMPORT",
         "columns": [
           {
             "name": "ACCESS_WKI_ID",
@@ -5504,7 +5504,7 @@
         "label": "WKI_KEYWORD",
         "domain": "work_items",
         "role": "join",
-        "desc": "Indexation et catégorisation thématique: WKI_KEYWORD",
+        "desc": "Thematic indexing and technology categorization: WKI_KEYWORD",
         "columns": [
           {
             "name": "KEYWORD_CODE",
@@ -5534,7 +5534,7 @@
         "label": "WKI_MANDATE",
         "domain": "mandates_legislation",
         "role": "join",
-        "desc": "Liaison juridique et mandat: WKI_MANDATE",
+        "desc": "Legal mandate mapping: WKI_MANDATE",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5564,7 +5564,7 @@
         "label": "WKI_MEMO",
         "domain": "work_items",
         "role": "child",
-        "desc": "Observations et contenu technique: WKI_MEMO",
+        "desc": "Technical notes and remarks: WKI_MEMO",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5603,7 +5603,7 @@
         "label": "WKI_PROJECT",
         "domain": "work_items",
         "role": "join",
-        "desc": "Indexation et catégorisation thématique: WKI_PROJECT",
+        "desc": "Thematic indexing and technology categorization: WKI_PROJECT",
         "columns": [
           {
             "name": "PROJECT_ID",
@@ -5633,7 +5633,7 @@
         "label": "WKI_REMARK",
         "domain": "work_items",
         "role": "child",
-        "desc": "Observations et contenu technique: WKI_REMARK",
+        "desc": "Technical notes and remarks: WKI_REMARK",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5687,7 +5687,7 @@
         "label": "WKI_SCHED_CONTRIB",
         "domain": "work_items",
         "role": "child",
-        "desc": "Détail du Work Item: WKI_SCHED_CONTRIB",
+        "desc": "Work item metadata: WKI_SCHED_CONTRIB",
         "columns": [
           {
             "name": "Assoc_Id",
@@ -5715,7 +5715,7 @@
         "label": "WKI_TRANSLATED_TITLE",
         "domain": "work_items",
         "role": "child",
-        "desc": "Détail du Work Item: WKI_TRANSLATED_TITLE",
+        "desc": "Work item metadata: WKI_TRANSLATED_TITLE",
         "columns": [
           {
             "name": "WKI_ID",
@@ -5739,7 +5739,7 @@
         "label": "WORK_ITEM",
         "domain": "work_items",
         "role": "hub",
-        "desc": "Spécifications techniques, rapports et normes (TS, TR, EN, ES, GS)",
+        "desc": "Technical specifications, reports and European standards (TS, TR, EN, ES, GS)",
         "columns": [
           {
             "name": "WKI_ID",
@@ -6192,7 +6192,7 @@
         "label": "WORK_ITEM_history",
         "domain": "audit_history",
         "role": "log",
-        "desc": "Historique et archivage: WORK_ITEM_history",
+        "desc": "Historical archive and audit log: WORK_ITEM_history",
         "columns": [
           {
             "name": "WKI_ID",
@@ -6600,7 +6600,7 @@
         "label": "WP_ACTION",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: WP_ACTION",
+        "desc": "Reference taxonomy: WP_ACTION",
         "columns": [
           {
             "name": "ACTION_TYPE",
@@ -6676,7 +6676,7 @@
         "label": "WP_KEYWORD",
         "domain": "referentials",
         "role": "master",
-        "desc": "Thésaurus des mots-clés normatifs",
+        "desc": "Standardisation thesaurus keywords",
         "columns": [
           {
             "name": "KEYWORD_CODE",
@@ -6709,7 +6709,7 @@
         "label": "WP_PROCEDURE",
         "domain": "schedules",
         "role": "master",
-        "desc": "Procédures d'approbation et de vote (AP, PE, MV, OAP)",
+        "desc": "Formal approval procedures and voting cycles (AP, PE, MV, OAP)",
         "columns": [
           {
             "name": "PROC_ID",
@@ -6737,7 +6737,7 @@
         "label": "WP_PROJECT",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: WP_PROJECT",
+        "desc": "Reference taxonomy: WP_PROJECT",
         "columns": [
           {
             "name": "PROJECT_ID",
@@ -6796,7 +6796,7 @@
         "label": "WP_PUB_LIST",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: WP_PUB_LIST",
+        "desc": "Reference taxonomy: WP_PUB_LIST",
         "columns": [
           {
             "name": "ACTION_TYPE",
@@ -6844,7 +6844,7 @@
         "label": "WP_PUB_LIST_DOC",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: WP_PUB_LIST_DOC",
+        "desc": "Reference taxonomy: WP_PUB_LIST_DOC",
         "columns": [
           {
             "name": "ACTION_TYPE",
@@ -6892,7 +6892,7 @@
         "label": "Legislation",
         "domain": "mandates_legislation",
         "role": "hub",
-        "desc": "Directives et règlements européens (RED, EMC, LVD, CRA...)",
+        "desc": "European directives and regulations (RED, EMC, LVD, Cyber Resilience Act...)",
         "columns": [
           {
             "name": "Id",
@@ -6980,7 +6980,7 @@
         "label": "Legislation_Property",
         "domain": "mandates_legislation",
         "role": "master",
-        "desc": "Nomenclature du cadre réglementaire: Legislation_Property",
+        "desc": "Regulatory framework lookup: Legislation_Property",
         "columns": [
           {
             "name": "Id",
@@ -7009,7 +7009,7 @@
         "label": "Legislations_Mandates",
         "domain": "mandates_legislation",
         "role": "join",
-        "desc": "Liaison juridique et mandat: Legislations_Mandates",
+        "desc": "Legal mandate mapping: Legislations_Mandates",
         "columns": [
           {
             "name": "LegislationId",
@@ -7040,7 +7040,7 @@
         "label": "Properties_Legislations",
         "domain": "mandates_legislation",
         "role": "child",
-        "desc": "Propriétés et métadonnées juridiques: Properties_Legislations",
+        "desc": "Legal properties and regulatory metadata: Properties_Legislations",
         "columns": [
           {
             "name": "LegislationId",
@@ -7071,7 +7071,7 @@
         "label": "Expiration_Reason",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: Expiration_Reason",
+        "desc": "Reference lookup table: Expiration_Reason",
         "columns": [
           {
             "name": "Id",
@@ -7099,7 +7099,7 @@
         "label": "Mandate",
         "domain": "mandates_legislation",
         "role": "hub",
-        "desc": "Mandats et demandes de normalisation (Standardisation Requests) de la CE",
+        "desc": "European Commission standardisation mandates and Standardisation Requests",
         "columns": [
           {
             "name": "Id",
@@ -7240,7 +7240,7 @@
         "label": "Mandate_Property",
         "domain": "mandates_legislation",
         "role": "child",
-        "desc": "Propriétés et métadonnées juridiques: Mandate_Property",
+        "desc": "Legal properties and regulatory metadata: Mandate_Property",
         "columns": [
           {
             "name": "Id",
@@ -7273,7 +7273,7 @@
         "label": "Requested_Deliverable",
         "domain": "referentials",
         "role": "hub",
-        "desc": "Table de référence WPMDB: Requested_Deliverable",
+        "desc": "Reference lookup table: Requested_Deliverable",
         "columns": [
           {
             "name": "Id",
@@ -7363,7 +7363,7 @@
         "label": "Requested_Deliverable_Property",
         "domain": "referentials",
         "role": "child",
-        "desc": "Table de référence WPMDB: Requested_Deliverable_Property",
+        "desc": "Reference lookup table: Requested_Deliverable_Property",
         "columns": [
           {
             "name": "Id",
@@ -7396,7 +7396,7 @@
         "label": "Requested_Deliverable_Status",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: Requested_Deliverable_Status",
+        "desc": "Reference lookup table: Requested_Deliverable_Status",
         "columns": [
           {
             "name": "Id",
@@ -7424,7 +7424,7 @@
         "label": "Requested_Deliverable_Work_Item_Validation_Status",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: Requested_Deliverable_Work_Item_Validation_Status",
+        "desc": "Reference lookup table: Requested_Deliverable_Work_Item_Validation_Status",
         "columns": [
           {
             "name": "Id",
@@ -7452,7 +7452,7 @@
         "label": "Requested_Deliverable_WorkItem",
         "domain": "referentials",
         "role": "child",
-        "desc": "Table de référence WPMDB: Requested_Deliverable_WorkItem",
+        "desc": "Reference lookup table: Requested_Deliverable_WorkItem",
         "columns": [
           {
             "name": "RequestedDeliverableId",
@@ -7489,7 +7489,7 @@
         "label": "Status",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: Status",
+        "desc": "Reference lookup table: Status",
         "columns": [
           {
             "name": "Id",
@@ -7517,7 +7517,7 @@
         "label": "Type",
         "domain": "referentials",
         "role": "master",
-        "desc": "Table de référence WPMDB: Type",
+        "desc": "Reference lookup table: Type",
         "columns": [
           {
             "name": "Id",
@@ -7545,7 +7545,7 @@
         "label": "Common_Field",
         "domain": "referentials",
         "role": "master",
-        "desc": "Nomenclature de référence: Common_Field",
+        "desc": "Reference taxonomy: Common_Field",
         "columns": [
           {
             "name": "Id",
@@ -7564,7 +7564,7 @@
         "label": "Event",
         "domain": "schedules",
         "role": "tx",
-        "desc": "Événements du cycle de production: Event",
+        "desc": "Deliverable production lifecycle events: Event",
         "columns": [
           {
             "name": "Id",
@@ -7620,7 +7620,7 @@
         "label": "EventSubType",
         "domain": "schedules",
         "role": "tx",
-        "desc": "Événements du cycle de production: EventSubType",
+        "desc": "Deliverable production lifecycle events: EventSubType",
         "columns": [
           {
             "name": "Id",
@@ -7649,7 +7649,7 @@
         "label": "EventType",
         "domain": "schedules",
         "role": "tx",
-        "desc": "Événements du cycle de production: EventType",
+        "desc": "Deliverable production lifecycle events: EventType",
         "columns": [
           {
             "name": "Id",
