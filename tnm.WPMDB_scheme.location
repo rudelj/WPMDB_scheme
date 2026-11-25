@@ -1,0 +1,23 @@
+# --- Restriction IP WPMDB Scheme (VPN & Réseau Local ETSI) ---
+location = /WPMDB_scheme {
+    return 301 /WPMDB_scheme/;
+}
+
+location = /wpmdb_scheme {
+    return 301 /WPMDB_scheme/;
+}
+
+location ^~ /wpmdb_scheme/ {
+    return 301 /WPMDB_scheme/;
+}
+
+location /WPMDB_scheme/ {
+    allow 10.0.0.0/8;
+    allow 172.30.6.0/23;
+    allow 172.16.0.0/12;
+    allow 127.0.0.1;
+    deny all;
+
+    index index.html;
+    try_files $uri $uri/ /WPMDB_scheme/index.html;
+}

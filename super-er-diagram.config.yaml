@@ -1,0 +1,614 @@
+title: ETSI WPMDB — Work Programme Management Database
+connection:
+  dialect: postgres
+  schema: dbo
+  envVar: DATABASE_URL
+hiddenFkColumns: []
+domains:
+  work_items:
+    name: Normes & Spécifications (Work Items)
+    short: WKI
+    color: '#2563eb'
+  schedules:
+    name: Jalons & Procédures (Schedules)
+    short: SCH
+    color: '#059669'
+  mandates_legislation:
+    name: Mandats CE & Réglementation
+    short: REG
+    color: '#d97706'
+  publication_transposition:
+    name: Catalogue & Transposition (NSO)
+    short: CAT
+    color: '#7c3aed'
+  stf_projects:
+    name: Équipes Spéciales d'Experts (STF)
+    short: STF
+    color: '#0891b2'
+  referentials:
+    name: Référentiels & Nomenclatures
+    short: REF
+    color: '#4b5563'
+    neutral: true
+  audit_history:
+    name: Historique & Traçabilité
+    short: LOG
+    color: '#64748b'
+    neutral: true
+tables:
+  A_LOG:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: A_LOG'
+    label: A_LOG
+  ACTION_DURATION:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: ACTION_DURATION'
+    label: ACTION_DURATION
+  ACTION_FORBIDDEN_DATES:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: ACTION_FORBIDDEN_DATES'
+    label: ACTION_FORBIDDEN_DATES
+  ACTION_MEMBER_HISTORY:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: ACTION_MEMBER_HISTORY'
+    label: ACTION_MEMBER_HISTORY
+  APP_ALLOCATION:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: APP_ALLOCATION'
+    label: APP_ALLOCATION
+  APP_COLOR:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: APP_COLOR'
+    label: APP_COLOR
+  APPLICATION:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: APPLICATION'
+    label: APPLICATION
+  APPLICATION_FAMILY:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: APPLICATION_FAMILY'
+    label: APPLICATION_FAMILY
+  APPLICATION_FAMILY_APPLICATION:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: APPLICATION_FAMILY_APPLICATION'
+    label: APPLICATION_FAMILY_APPLICATION
+  ARTICLE:
+    domain: publication_transposition
+    role: tx
+    description: Articles et chapitres normatifs publiés
+    label: ARTICLE
+  CATALOG_INDEX:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: CATALOG_INDEX'
+    label: CATALOG_INDEX
+  Catalog_Main:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: Catalog_Main'
+    label: Catalog_Main
+  catalog_main_history:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: catalog_main_history'
+    label: catalog_main_history
+  Catalog_Pub_Lock_Table:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: Catalog_Pub_Lock_Table'
+    label: Catalog_Pub_Lock_Table
+  Catalog_TITLE:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: Catalog_TITLE'
+    label: Catalog_TITLE
+  CDRom:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: CDRom'
+    label: CDRom
+  CDRom_Freeze:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: CDRom_Freeze'
+    label: CDRom_Freeze
+  dtproperties:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: dtproperties'
+    label: dtproperties
+  Histo_catalog_main:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: Histo_catalog_main'
+    label: Histo_catalog_main
+  histo_catalog_main_history:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: histo_catalog_main_history'
+    label: histo_catalog_main_history
+  Histo_catalog_title:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: Histo_catalog_title'
+    label: Histo_catalog_title
+  OTHER_STANDARD:
+    domain: work_items
+    role: child
+    description: 'Détail du Work Item: OTHER_STANDARD'
+    label: OTHER_STANDARD
+  PORTAL_Temp:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: PORTAL_Temp'
+    label: PORTAL_Temp
+  PORTAL_Temp2:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: PORTAL_Temp2'
+    label: PORTAL_Temp2
+  PROJECT_REMARK:
+    domain: referentials
+    role: child
+    description: 'Table de référence WPMDB: PROJECT_REMARK'
+    label: PROJECT_REMARK
+  PROTOTYPE:
+    domain: schedules
+    role: child
+    description: Gabarits d'échéancier par catégorie de norme
+    label: PROTOTYPE
+  PUBLICATIONS_CATALOG:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: PUBLICATIONS_CATALOG'
+    label: PUBLICATIONS_CATALOG
+  RDB_ARTICLE:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: RDB_ARTICLE'
+    label: RDB_ARTICLE
+  SCHEDULE:
+    domain: schedules
+    role: hub
+    description: Échéancier complet des jalons de production des normes (> 520 000
+      jalons)
+    label: SCHEDULE
+  SCHEDULE_TMP:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: SCHEDULE_TMP'
+    label: SCHEDULE_TMP
+  STAGE_CODES:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: STAGE_CODES'
+    label: STAGE_CODES
+  STF_CONTRACTUAL_MILESTONE:
+    domain: stf_projects
+    role: child
+    description: 'Détail de gestion STF: STF_CONTRACTUAL_MILESTONE'
+    label: STF_CONTRACTUAL_MILESTONE
+  STF_REFERENCE:
+    domain: stf_projects
+    role: child
+    description: 'Détail de gestion STF: STF_REFERENCE'
+    label: STF_REFERENCE
+  STF_REFERENCE_MILESTONE:
+    domain: stf_projects
+    role: child
+    description: 'Détail de gestion STF: STF_REFERENCE_MILESTONE'
+    label: STF_REFERENCE_MILESTONE
+  STF_REFERENCE_SCHEDULE:
+    domain: stf_projects
+    role: child
+    description: 'Détail de gestion STF: STF_REFERENCE_SCHEDULE'
+    label: STF_REFERENCE_SCHEDULE
+  STF_REFERENCE_TRAVEL:
+    domain: stf_projects
+    role: master
+    description: 'Barème et nomenclature STF: STF_REFERENCE_TRAVEL'
+    label: STF_REFERENCE_TRAVEL
+  STF_SCHEDULE:
+    domain: stf_projects
+    role: tx
+    description: 'Gestion opérationnelle des missions et plannings STF: STF_SCHEDULE'
+    label: STF_SCHEDULE
+  STF_SCHEDULE_TYPE:
+    domain: stf_projects
+    role: master
+    description: 'Barème et nomenclature STF: STF_SCHEDULE_TYPE'
+    label: STF_SCHEDULE_TYPE
+  STF_TRAVEL:
+    domain: stf_projects
+    role: tx
+    description: 'Gestion opérationnelle des missions et plannings STF: STF_TRAVEL'
+    label: STF_TRAVEL
+  STF_WORK_ITEM:
+    domain: stf_projects
+    role: hub
+    description: Affectation et gouvernance des équipes spéciales d'experts (STF)
+    label: STF_WORK_ITEM
+  STF_WORK_ITEM_history:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: STF_WORK_ITEM_history'
+    label: STF_WORK_ITEM_history
+  Supersede:
+    domain: work_items
+    role: join
+    description: Remplacement, révision et succession des normes
+    label: Supersede
+  SUPPORTING_MEMBERS:
+    domain: work_items
+    role: child
+    description: Membres ETSI soutenant officiellement la création du Work Item
+    label: SUPPORTING_MEMBERS
+  sysdiagrams:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: sysdiagrams'
+    label: sysdiagrams
+  TAB_ACTION_TYPE:
+    domain: referentials
+    role: master
+    description: Types d'actions de normalisation
+    label: TAB_ACTION_TYPE
+  TAB_CLUSTER:
+    domain: referentials
+    role: master
+    description: Thématiques et clusters technologiques
+    label: TAB_CLUSTER
+  TAB_CLUSTER_TB:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_CLUSTER_TB'
+    label: TAB_CLUSTER_TB
+  TAB_CTY_AUTOMATIC_TRANSPOSITION:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_CTY_AUTOMATIC_TRANSPOSITION'
+    label: TAB_CTY_AUTOMATIC_TRANSPOSITION
+  TAB_FREQUENCY_APP:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_FREQUENCY_APP'
+    label: TAB_FREQUENCY_APP
+  TAB_FREQUENCY_UNITS:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_FREQUENCY_UNITS'
+    label: TAB_FREQUENCY_UNITS
+  Tab_Language:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: Tab_Language'
+    label: Tab_Language
+  TAB_LEAD_BODY:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_LEAD_BODY'
+    label: TAB_LEAD_BODY
+  TAB_MILESTONE_CODE:
+    domain: referentials
+    role: master
+    description: Codes des jalons procéduraux (TB Approval, Vote, Publication)
+    label: TAB_MILESTONE_CODE
+  tab_milestone_code_QA:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: tab_milestone_code_QA'
+    label: tab_milestone_code_QA
+  TAB_PRICE_CODE:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_PRICE_CODE'
+    label: TAB_PRICE_CODE
+  TAB_PROJECT_REMARK_TYPE:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_PROJECT_REMARK_TYPE'
+    label: TAB_PROJECT_REMARK_TYPE
+  TAB_PUBLICATION_STATUS:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_PUBLICATION_STATUS'
+    label: TAB_PUBLICATION_STATUS
+  TAB_STANDARD_TYPE:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_STANDARD_TYPE'
+    label: TAB_STANDARD_TYPE
+  tab_standard_type_20030120:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: tab_standard_type_20030120'
+    label: tab_standard_type_20030120
+  TAB_STANDSTILL_STATUS:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_STANDSTILL_STATUS'
+    label: TAB_STANDSTILL_STATUS
+  TAB_STATUS_RANGE:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_STATUS_RANGE'
+    label: TAB_STATUS_RANGE
+  TAB_STD_LINK_STATUS:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_STD_LINK_STATUS'
+    label: TAB_STD_LINK_STATUS
+  TAB_STD_STATUS:
+    domain: referentials
+    role: master
+    description: Statuts du cycle de vie des normes
+    label: TAB_STD_STATUS
+  TAB_STD_TYPE:
+    domain: referentials
+    role: master
+    description: Types de normes (TS, TR, EN, ES, EG, GS)
+    label: TAB_STD_TYPE
+  TAB_TRAVEL_STATUS:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_TRAVEL_STATUS'
+    label: TAB_TRAVEL_STATUS
+  TAB_WKI_REMARK_TYPE:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_WKI_REMARK_TYPE'
+    label: TAB_WKI_REMARK_TYPE
+  TAB_WKI_STATE_CODE:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: TAB_WKI_STATE_CODE'
+    label: TAB_WKI_STATE_CODE
+  tab_wki_state_code_transition:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: tab_wki_state_code_transition'
+    label: tab_wki_state_code_transition
+  TempResults:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: TempResults'
+    label: TempResults
+  TRANSPOSITION:
+    domain: publication_transposition
+    role: tx
+    description: Transposition des normes européennes (EN) par les organismes nationaux
+      (NSOs)
+    label: TRANSPOSITION
+  transposition_20180629:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: transposition_20180629'
+    label: transposition_20180629
+  TRANSPOSITION_TARGET:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: TRANSPOSITION_TARGET'
+    label: TRANSPOSITION_TARGET
+  WI_CRIT:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: WI_CRIT'
+    label: WI_CRIT
+  WKI_ASPECTS:
+    domain: work_items
+    role: child
+    description: 'Observations et contenu technique: WKI_ASPECTS'
+    label: WKI_ASPECTS
+  WKI_CLUSTER:
+    domain: work_items
+    role: join
+    description: 'Indexation et catégorisation thématique: WKI_CLUSTER'
+    label: WKI_CLUSTER
+  WKI_CROSS_REF:
+    domain: work_items
+    role: join
+    description: Références croisées et dépendances entre normes
+    label: WKI_CROSS_REF
+  WKI_DIRECTIVE:
+    domain: mandates_legislation
+    role: join
+    description: 'Liaison juridique et mandat: WKI_DIRECTIVE'
+    label: WKI_DIRECTIVE
+  WKI_DOC:
+    domain: work_items
+    role: child
+    description: 'Détail du Work Item: WKI_DOC'
+    label: WKI_DOC
+  WKI_FREQUENCY:
+    domain: work_items
+    role: join
+    description: 'Indexation et catégorisation thématique: WKI_FREQUENCY'
+    label: WKI_FREQUENCY
+  WKI_IMPORT:
+    domain: work_items
+    role: child
+    description: 'Détail du Work Item: WKI_IMPORT'
+    label: WKI_IMPORT
+  WKI_KEYWORD:
+    domain: work_items
+    role: join
+    description: 'Indexation et catégorisation thématique: WKI_KEYWORD'
+    label: WKI_KEYWORD
+  WKI_MANDATE:
+    domain: mandates_legislation
+    role: join
+    description: 'Liaison juridique et mandat: WKI_MANDATE'
+    label: WKI_MANDATE
+  WKI_MEMO:
+    domain: work_items
+    role: child
+    description: 'Observations et contenu technique: WKI_MEMO'
+    label: WKI_MEMO
+  WKI_PROJECT:
+    domain: work_items
+    role: join
+    description: 'Indexation et catégorisation thématique: WKI_PROJECT'
+    label: WKI_PROJECT
+  WKI_REMARK:
+    domain: work_items
+    role: child
+    description: 'Observations et contenu technique: WKI_REMARK'
+    label: WKI_REMARK
+  WKI_SCHED_CONTRIB:
+    domain: work_items
+    role: child
+    description: 'Détail du Work Item: WKI_SCHED_CONTRIB'
+    label: WKI_SCHED_CONTRIB
+  WKI_TRANSLATED_TITLE:
+    domain: work_items
+    role: child
+    description: 'Détail du Work Item: WKI_TRANSLATED_TITLE'
+    label: WKI_TRANSLATED_TITLE
+  WORK_ITEM:
+    domain: work_items
+    role: hub
+    description: Spécifications techniques, rapports et normes (TS, TR, EN, ES, GS)
+    label: WORK_ITEM
+  WORK_ITEM_history:
+    domain: audit_history
+    role: log
+    description: 'Historique et archivage: WORK_ITEM_history'
+    label: WORK_ITEM_history
+  WP_ACTION:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: WP_ACTION'
+    label: WP_ACTION
+  WP_KEYWORD:
+    domain: referentials
+    role: master
+    description: Thésaurus des mots-clés normatifs
+    label: WP_KEYWORD
+  WP_PROCEDURE:
+    domain: schedules
+    role: master
+    description: Procédures d'approbation et de vote (AP, PE, MV, OAP)
+    label: WP_PROCEDURE
+  WP_PROJECT:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: WP_PROJECT'
+    label: WP_PROJECT
+  WP_PUB_LIST:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: WP_PUB_LIST'
+    label: WP_PUB_LIST
+  WP_PUB_LIST_DOC:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: WP_PUB_LIST_DOC'
+    label: WP_PUB_LIST_DOC
+  Legislation:
+    domain: mandates_legislation
+    role: hub
+    description: Directives et règlements européens (RED, EMC, LVD, CRA...)
+    label: Legislation
+  Legislation_Property:
+    domain: mandates_legislation
+    role: master
+    description: 'Nomenclature du cadre réglementaire: Legislation_Property'
+    label: Legislation_Property
+  Legislations_Mandates:
+    domain: mandates_legislation
+    role: join
+    description: 'Liaison juridique et mandat: Legislations_Mandates'
+    label: Legislations_Mandates
+  Properties_Legislations:
+    domain: mandates_legislation
+    role: child
+    description: 'Propriétés et métadonnées juridiques: Properties_Legislations'
+    label: Properties_Legislations
+  Expiration_Reason:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: Expiration_Reason'
+    label: Expiration_Reason
+  Mandate:
+    domain: mandates_legislation
+    role: hub
+    description: Mandats et demandes de normalisation (Standardisation Requests) de
+      la CE
+    label: Mandate
+  Mandate_Property:
+    domain: mandates_legislation
+    role: child
+    description: 'Propriétés et métadonnées juridiques: Mandate_Property'
+    label: Mandate_Property
+  Requested_Deliverable:
+    domain: referentials
+    role: hub
+    description: 'Table de référence WPMDB: Requested_Deliverable'
+    label: Requested_Deliverable
+  Requested_Deliverable_Property:
+    domain: referentials
+    role: child
+    description: 'Table de référence WPMDB: Requested_Deliverable_Property'
+    label: Requested_Deliverable_Property
+  Requested_Deliverable_Status:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: Requested_Deliverable_Status'
+    label: Requested_Deliverable_Status
+  Requested_Deliverable_Work_Item_Validation_Status:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: Requested_Deliverable_Work_Item_Validation_Status'
+    label: Requested_Deliverable_Work_Item_Validation_Status
+  Requested_Deliverable_WorkItem:
+    domain: referentials
+    role: child
+    description: 'Table de référence WPMDB: Requested_Deliverable_WorkItem'
+    label: Requested_Deliverable_WorkItem
+  Status:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: Status'
+    label: Status
+  Type:
+    domain: referentials
+    role: master
+    description: 'Table de référence WPMDB: Type'
+    label: Type
+  Common_Field:
+    domain: referentials
+    role: master
+    description: 'Nomenclature de référence: Common_Field'
+    label: Common_Field
+  Event:
+    domain: schedules
+    role: tx
+    description: 'Événements du cycle de production: Event'
+    label: Event
+  EventSubType:
+    domain: schedules
+    role: tx
+    description: 'Événements du cycle de production: EventSubType'
+    label: EventSubType
+  EventType:
+    domain: schedules
+    role: tx
+    description: 'Événements du cycle de production: EventType'
+    label: EventType
+columns:
+- - work_items
+  - schedules
+- - mandates_legislation
+  - publication_transposition
+- - stf_projects
+  - referentials
+  - audit_history
